@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <!--RWD-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, maximum-scale=1.0" />
+<title>新增網頁</title>
+
+<!--呼叫CSS-->
+<link href="main.css" rel="stylesheet" type="text/css" />
+<!--呼叫JS-->
+<script language="javascript" type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+	<div class="WRAPPER">
+  <h1>User list</h1>
+
+<!--表單區-->	
+<div class="content">
+	<table>
+		<div class="list_top">
+			<div><span>NO</span></div>
+			<div><span>name</span></div>
+			<div><span>phone</span></div>
+			<div><span>e-mail</span></div>
+			<div><span>active</span></div>		
+		</div>
+		<tbody id="list_box">
+		<tr style="display:none ;">
+			<td><span name="no">0</span></td>
+			<td><span name="name">annie</span></td>
+			<td><span name="phone">0987654321</span></td>
+			<td><span name="email">annie@gmail.com</span></td>
+			<td><input name="btn_re" type="button" value="R"></td>
+			<td><input name="btn_del" type="button" value="X"></td>		
+		</tr>		
+		
+		</tbody>
+	</table>		
+	
+		
+</div>
+	
+	
+<!--填單區-->
+		<form id="footer" name="footer">
+			<div name="name_"><span>name<span style="color:red;width: auto;margin: 0;">*</span>:</span><input type="text" id="input_box_name" class="txt" name="input_box_name" ></div>
+			<div name="phone_"><span>phone:</span><input id="input_box_phone" class="txt"></div>
+			<div name="email_"><span>e-mail<span style="color:red;width: auto;margin: 0;">*</span>:</span><input id="input_box_mail" class="txt"></div>
+			<div class="btn_">
+		<input type="button" id="enter_btn" value="enter"  class="btn">
+		<input type="button" id="cancel_btn" value="cancel"  class="btn" onClick="cancelForm()">
+        	</div>
+		</form>
+	
+	</div>
+
+</body>
+
+</html>

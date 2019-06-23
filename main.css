@@ -1,0 +1,53 @@
+@charset "big5";
+/* CSS Document */
+
+/*基本*/                                                    
+html { -webkit-text-size-adjust:none;background-size:15px 15px;background-repeat: repeat;}
+body { margin:0px; padding:0px;background-image:linear-gradient(90deg,rgba(255,255,255,0.05) 50%,transparent 50%);background-color: #B6D5C3;background-size: 15px 15px;}
+
+
+
+
+/*版面*/ 
+.WRAPPER { z-index:0; position: relative; display:block; margin: 0 auto; padding:0 0 50px; width:1000px; min-height:1220px; overflow:hidden; text-align:left; font-family:"微軟正黑體","Microsoft JhengHei",Helvetica;}
+.WRAPPER img { border:0px; vertical-align:top;}
+.WRAPPER a { text-decoration:none;}
+
+h1{color:#FFF;}
+
+.content {  list-style: none;width: 98%; margin: 0 auto 200px; padding: 0;box-shadow: 3px 3px 3px rgba(0,0,0,0.1);border-radius: 10px;background: rgba(255,255,255,0.3);padding:10px 20px ;box-sizing: border-box;}
+
+.list_top  {  line-height: 2;  border-bottom: 4px double #FFF;color: #000;}
+.list_top div{border:0.5px;display: inline-block;width: 10%;}
+.list_top div:nth-child(2){width: 20%;}
+.list_top div:nth-child(3){width: 25%;}
+.list_top div:nth-child(4){width: 25%;}
+
+.content table{width: 100%;border-collapse: collapse;}
+.content #list_box{list-style: decimal}
+.content #list_box tr{line-height: 2;  border-bottom: 1px solid #FFF;}
+.content #list_box tr:last-child{border-bottom: none;}
+.content #list_box tr td{border:0.5px;display: inline-block;width: 10%;}
+.content #list_box tr td:nth-child(2){width: 20%;}
+.content #list_box tr td:nth-child(3){width: 25%;}
+.content #list_box tr td:nth-child(4){width: 25%;}
+.content #list_box tr td:nth-child(5){width: auto;margin-right: 1%;}
+.content #list_box tr td:nth-child(6){width: 5%;}
+#td_4 input,
+#td_5 input{cursor: pointer}
+
+#footer {position: fixed;bottom: 20px;left: calc(50% - 160px); display: block; width:320px;margin: 10px auto;padding: 20px; background-color: #DDD;box-sizing: border-box;border-radius: 5px;box-shadow: 5px 5px 5px rgba(0,0,0,0.1)}
+#footer span {width:68px;margin: 5px;display: inline-block;}
+#footer .btn_ {width:200px;margin: 5px auto;text-align: center;}
+#footer input.txt {border-width: 0 0 1px 0;background-color: transparent;outline: none;}
+#footer input.btn {border-width: 0;background-color: #FF5F00;outline: none;color:#FFF;padding: 2px 5px;margin:8px 5px 0px;width: 50px;border-radius: 3px;cursor: pointer;}
+#footer input.btn:hover{box-shadow: none;background-color: #964100}
+
+/*隱鑶*/
+.for_pc {}
+.for_phone { display:none !important;}
+	@media screen and (max-width:767px){
+		.for_pc { display:none !important;}
+		.for_phone { display: inherit !important;margin: 0 auto;}
+	}
+	
